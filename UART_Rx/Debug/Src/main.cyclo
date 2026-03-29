@@ -1,0 +1,7 @@
+../Src/main.c:35:5:main	3
+../Src/main.c:71:6:UART2_GPIO_Init	1
+../Src/main.c:86:6:UART2_Init	1
+../Src/main.c:100:6:LED_GPIO_Init	1
+../Src/main.c:115:6:USART2_IRQHandler	1
+../Src/main.c:120:6:USART_ApplicationEventCallback	5
+../Src/main.c:145:6:decode_cmd	6

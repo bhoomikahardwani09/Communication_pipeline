@@ -1,0 +1,56 @@
+19:48:21 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "UART_Rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/bhoomika/Desktop/epicure_communication_pipeline/UART_Rx/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_Rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_Rx.elf
+ 
+arm-none-eabi-size  UART_Rx.elf 
+arm-none-eabi-objdump -h -S UART_Rx.elf  > "UART_Rx.list"
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_Rx.list
+ 
+21:03:33 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+21:03:49 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+21:13:12 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+21:13:25 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+21:13:37 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 
+21:14:05 **** Incremental Build of configuration Debug for project UART_Rx ****
+make -j20 all 
+arm-none-eabi-size  UART_Rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12164	    112	   2016	  14292	   37d4	UART_Rx.elf
+Finished building: default.size.stdout
+ 

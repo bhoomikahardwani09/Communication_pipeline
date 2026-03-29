@@ -1,0 +1,7 @@
+"./Src/main.o"
+"./Src/stm32f411ceu6_gpio_driver.o"
+"./Src/stm32f411ceu6_rcc_driver.o"
+"./Src/stm32f411ceu6_usart_driver.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f411ceux.o"
