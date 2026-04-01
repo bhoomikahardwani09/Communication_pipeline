@@ -38,8 +38,8 @@ Because physical hardware implementation was optional for this assessment, and s
 ![STM32 Parsing Log](images/stm32_logs.png)
 
 ### 3. Saleae Logic Analyser Output
-![UART_Rx1](logic_analyser_op1.png)
-![UART_Rx2](logic_analyser_op2.png)
+![UART_Rx1](images/logic_analyser_op1.png)
+![UART_Rx2](images/logic_analyser_op2.png)
 
 ---
 *Developed by Bhoomika Hardwani*
