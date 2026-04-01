@@ -24,7 +24,7 @@ The pipeline consists of two primary microcontrollers working in tandem:
 Because physical hardware implementation was optional for this assessment, and standard web simulators do not natively support bare-metal register execution for the STM32F411, I adopted a decoupled Software-in-the-Loop (SIL) approach to verify the system logic:
 
 1. **Cloud-to-Gateway Simulation:** The ESP32 network layer was simulated using Wokwi to verify the WiFi stack, MQTT broker connection, and payload forwarding.
-2. **Logic & Parsing Abstraction:** The STM32's `decode_cmd()` application logic was abstracted from the bare-metal UART drivers and compiled as a native C testbench using GCC. This allowed for rigorous unit testing of the string parsing and edge-case handling (e.g., rejecting malformed commands) independently of the physical hardware. 
+2. **Logic & Parsing Abstraction:** The STM32's `decode_cmd()` application logic was abstracted from the bare-metal UART drivers and compiled as a native C testbench using GCC. This allowed for unit testing of the string parsing and edge-case handling (e.g., rejecting malformed commands) independently of the physical hardware. 
 
 ##  Proof of Work & Logs
 
@@ -35,8 +35,11 @@ Because physical hardware implementation was optional for this assessment, and s
 
 ### 2. STM32 Command Parsing
 *The native C testbench verifying the string decoding, hardware stub execution, and error handling of the STM32 application logic.*
-
 ![STM32 Parsing Log](images/stm32_logs.png)
+
+### 3. Saleae Logic Analyser Output
+![UART_Rx1](logic_analyser_op1.png)
+![UART_Rx2](logic_analyser_op2.png)
 
 ---
 *Developed by Bhoomika Hardwani*
